@@ -1,379 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Dancing+Script&family=Josefin+Sans:wght@500&family=Nunito+Sans:opsz,wght@6..12,500&family=PT+Sans&family=Whisper&family=Young+Serif&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Kritika Global</title>
-</head>
-<script src="./index.js"></script>
-<body>
- 
- 
-   <!-- slider image -->
-    <div class="home-slider owl-carousel js-fullheight" style="position: absolute;background-color: #F6F6F6;">
+    <style>
+       .gallery img {
        
-        <div class="slider-item js-fullheight" style="background-image:url(./images/SearchRescue.webp);">
-            <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-12 ftco-animate">
-                    <div class="text w-100 text-center">
-                        <h1 class="mb-3">Kritika International Global</h1>
-                        <h2>At Kritika Global Enterprises, our company values are rooted in genuine regard for the interests of our clients, employees, and the communities we operate in. Our business approach is centered on providing the best service to our clients.
+            filter: grayscale(100%);
+            transition: filter 0.3s ease-in-out;
+        }
 
-                        </h2>
-                  
-                  </div>
-                </div>
+        .gallery img:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+  </head>
+  <script src="./index.js"></script>
+  <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- slider image -->
+    <div
+      class="home-slider owl-carousel js-fullheight"
+      style="position: absolute; background-color: #f6f6f6"
+    >
+      <div
+        class="slider-item js-fullheight"
+        style="background-image: url(./images/slider-3.jpg)"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <div
+            class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
+          >
+            <div class="col-md-12 ftco-animate">
+              <div class="text w-100 text-center">
+                <h1 class="mb-3" data-aos="fade-up">Kritika International Global</h1>
+                <h2 data-aos="fade-up">
+           
+Kritika Global Enterprises prioritizes genuine care for clients, employees, and communities. Our business ethos is centered on delivering top-notch service to our clients.
+                </h2>
+              
+                    <button class="contact-btn" data-aos="fade-up"><a href="#contactUs" class="text-light">Contact Us</a></button>
               </div>
-          </div>
-        </div>
-  
-        <div class="slider-item js-fullheight" style="background-image:url(./images/slider1.webp)">
-            <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-12 ftco-animate">
-                    <div class="text w-100 text-center">
-                        <h1 class="mb-3">Welcome To</h1>
-                        <h2>Kritika Global</h2>
-                        <br>
-                        <button class="btn btn-primary"> Contact Us</button>
-                    
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-  
-        <div class="slider-item js-fullheight" style="background-image:url(./images/slider2.jpg);">
-            <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-12 ftco-animate">
-                    <div class="text w-100 text-center">
-                        <h2>Kritika Global</h2>
-                        <h1 class="mb-3">welcome</h1>
-                  </div>
-                </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
-           
-      <header style="background: rgba(0, 0, 0, 0.67); position: relative;">
-        <div class=" d-flex justify-content-between container-lg ">
-            <div>
-                <h2 >
-                    <a class="navbar-brand fw-bold text-light" href="#">Kritika Global</a>
-                </h2>
+
+      <div
+        class="slider-item js-fullheight"
+        style="background-image: url(./images/ibrahim-boran-pV5arhEZHiA-unsplash.jpg)"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <div
+            class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
+          >
+            <div class="col-md-12 ftco-animate">
+                <div class="text w-100 text-center">
+                    <h1 class="mb-3" data-aos="fade-up">Kritika International Global</h1>
+                    <h2 data-aos="fade-up">
+               
+    Kritika Global Enterprises prioritizes genuine care for clients, employees, and communities. Our business ethos is centered on delivering top-notch service to our clients.
+                    </h2>
+                    <br />
+                    <button class="contact-btn" data-aos="fade-up" ><a href="#contactUs" class="text-light">
+                        Contact Us
+                    </a></button>
+                  </div>
             </div>
-    
-            <div class="nav-a gap-4 ">
-                <a class="nav-link" id="home" href="#" style="color: #FF9D0A;">Home</a>
-                <a class="nav-link" id="about" href="#">About Us</a>
-                <a class="nav-link" id="pricing" href="#">Services</a>
-                <a class="nav-link" id="contact" href="#contactUs">Contact Us</a>
-           
-            </div>
-            <div class="menu">
-                <img src="./icons/mingcute_menu-fill.png" id="menuButton" alt="menu">
-            </div>
+          </div>
         </div>
+      </div>
+
+      <div
+        class="slider-item js-fullheight"
+        style="background-image: url(./images/truck.png)"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <div
+            class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
+          >
+            <div class="col-md-12 ftco-animate">
+                <div class="text w-100 text-center">
+                    <h1 class="mb-3" data-aos="fade-up">Kritika International Global</h1>
+                    <h2 data-aos="fade-up">
+               
+    Kritika Global Enterprises prioritizes genuine care for clients, employees, and communities. Our business ethos is centered on delivering top-notch service to our clients.
+                    </h2>
+                    <br />
+                    <button class="contact-btn" data-aos="fade-up"><a href="#contactUs" class="text-light">Contact Us</a></button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header style="position: relative">
+      <div class="nav-top d-flex justify-content-between container-lg align-items-center">
+        <div>
+          <h2>
+            <a class="navbar-brand fw-bold text-light" href="#"
+              >Kritika Global</a
+            >
+          </h2>
+        </div>
+
+        <div class="nav-a gap-4">
+          <a class="nav-link" id="home" href="#" style="color: #ff9d0a">Home</a>
+          <a class="nav-link" id="about" href="#about-us">About Us</a>
+          <a class="nav-link" id="pricing" href="#services">Services</a>
+          <a class="nav-link" id="contact" href="#contactUs">Contact Us</a>
+        </div>
+        <div class="menu">
+          <img
+            src="./icons/mingcute_menu-fill.png"
+            id="menuButton"
+            alt="menu"
+          />
+        </div>
+      </div>
     </header>
-  
-<div class="main-body1" style="margin-top: 90vh; padding-top: 10px;">
-    <h2 class="text-center w-100 pt-4 mt-2 text-muted fw-bold ">
-        Message From Our Chairman
-    </h2>
-    <div class="container">
+
+    <div class="main-body1" style="margin-top: 85vh; padding-top: 10px">
+      <h2
+        class="text-center w-100 pt-4 mt-2 mb-4 pb-3 text-muted fw-bold"
+        data-aos="fade-up"
+      >
+        Message From Our Boards
+      </h2>
+      <div class="container">
         <div class="col-12">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card m-4 p-3 ">
-                        <div class="d-flex gap-2">
-                            <div class="profile">
-                                <img src="./images/img2.webp" class="rounded-circle" >
-                            </div>
-                            <div>
-                                <h4>Ram Chandra</h4>
-                                <p>Chairman</p>
-                            </div>
-                            
-    
-                        </div>
-                        <p class="px-3">
-                            PostPilot is our new weapon against sinking email engagement and rising PPC costs. The results and ROI have been outstanding. It’s now one of our core marketing channels to increase acquisition & LTV.
-                        </p>
-    
-                    </div>
-                 
-    
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="messages m-4 p-3 text-center" data-aos="fade-up">
+                <div class="d-flex justify-content-center">
+                  <div class="profile position-absolute">
+                    <img src="./images/profile1.png" class="rounded-circle" />
+                  </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card m-4 p-3 ">
-                        <div class="d-flex gap-2">
-                            <div class="profile">
-                                <img src="./images/img2.webp" class="rounded-circle" >
-                            </div>
-                            <div>
-                                <h4>Ram Chandra</h4>
-                                <p>Chairman</p>
-                            </div>
-                            
-    
-                        </div>
-                        <p class="px-3">
-                            PostPilot is our new weapon against sinking email engagement and rising PPC costs. The results and ROI have been outstanding. It’s now one of our core marketing channels to increase acquisition & LTV.
-                        </p>
-    
-                    </div>
-                </div>
+                <h4 class="profile-name fw-bold">CHAIRMAN</h4>
+                <h5 class="fw-bold" style="color: #f8d38a">Prakash Thapa</h5>
+                <p class="px-3 ">
+                    I write this message with immense pleasure to be serving as the chairman of Kritika International Trade. All the members onboard have been keen helping hands to make our company attain its heights. We have been providing satisfactory services to various clients in the past and we intend to keep on doing so with the same integrity.                </p>
+              </div>
             </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="messages m-4 p-3 text-center" data-aos="fade-up">
+                <div class="d-flex justify-content-center">
+                  <div class="profile position-absolute">
+                    <img src="./images/profile2.png" class="rounded-circle" />
+                  </div>
+                </div>
+                <h4 class="profile-name fw-bold"> DIRECTOR (Europe/Overseas Market)</h4>
+                <h5 class="fw-bold" style="color:#f8d38a">Sufal Thakuri</h5>
+                <p class="px-3">
+                    With great enthusiasm is what I pen down this message being the director of Kritika International Trade. Having like-minded and talented minds working side by side is what has propelled our company to such heights. As we move forward into the future, I am more than assured that our company will make a huge difference across the globe.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
- 
-</div>
-<div class="about-us pb-5 px-lg-5 px-md-2">
-    
-    <h2 class="text-center w-100 pt-4 fw-bold text-muted pb-3 ">
-       About Us
-    </h2>
-    <div class="mx-5">
+    <div class="about-us pb-5 px-lg-5 px-md-2" id="about-us">
+      <h2
+        class="text-center w-100 pt-4 fw-bold text-muted pb-3"
+        data-aos="fade-up"
+      >
+        About Us
+      </h2>
+      <div class="mx-5">
         <div class="col-12">
-            <div class="row">
-                <div class="options col-lg-6 col-md-6 col-sm-12">
-                    <div class="option active" style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
-                       <div class="shadow"></div>
-                       <div class="label">
-                          <div class="info">
-                             <div class="main">Medical Equipment 1</div>
-                             <div class="sub">medical equipment 1</div>
-                          </div>
-                       </div>
-                    </div>
-                    <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
-                       <div class="shadow"></div>
-                       <div class="label">
-                          <div class="info">
-                             <div class="main">Computer Equipment </div>
-                             <div class="sub">Medical Equipment 3</div>
-                          </div>
-                       </div>
-                    </div>
-                    <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
-                       <div class="shadow"></div>
-                       <div class="label">
-                          <div class="info">
-                             <div class="main">Military Equipment</div>
-                             <div class="sub">Medical Equipment 1</div>
-                          </div>
-                       </div>
-                    </div>
-                    <!-- <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
-                       <div class="shadow"></div>
-                       <div class="label">
-        
-                          <div class="info">
-                             <div class="main">Idiefe</div>
-                             <div class="sub">Omuke trughte a otufta</div>
-                          </div>
-                       </div>
-                    </div> -->
-                    <!-- <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
-                       <div class="shadow"></div>
-                       <div class="label">
-        
-                          <div class="info">
-                             <div class="main">Inatethi</div>
-                             <div class="sub">Omuke trughte a otufta</div>
-                          </div>
-                       </div>
-                    </div> -->
-                 </div>
-                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <!-- <h3>What is Kritika Global?</h3> -->
-                    <p>At Kritika Global Enterprises, We have genuine regard for the interests of our clients,employees and members of the communities in which we operate;this is embedded in our company values.Our approach to business involves providing best service to our clients.
-                        We take pride in shaping our clients expectations.
-                    </p>
-
-                        At Kritika Global Enterprises, We have genuine regard for the interests of our clients,employees and members of the communities in which we operate;this is embedded in our company values.Our approach to business involves providing best service to our clients.
-                        We take pride in shaping our clients expectations.
-
-                      
-                 </div>
+          <div class="row">
+            <div class="options col-lg-6 col-md-6 col-sm-12 " data-aos="fade-right">
+              <div
+                class="option active"
+                style="
+                  --optionBackground: url(./images/adobestock_129975524.jpg);
+                "
+              >
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="info">
+                    <div class="main">Medical Equipment </div>
+                    <div class="sub">We services medical equipment</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="option"
+                style="
+                  --optionBackground: url(./images/Puma-M26-Varient-MPSV.png);
+                "
+              >
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="info">
+                    <div class="main">Military Equipment</div>
+                    <div class="sub">We provide Military Equipment for Nepal Army</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="option"
+                style="
+                  --optionBackground: url(./images//marcel-scholte-LPurJnihmQI-unsplash.jpg);
+                "
+              >
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="info">
+                    <div class="main">Medical Machine</div>
+                    <div class="sub">X-ray Machine</div>
+                  </div>
+                </div>
+              </div>
+             
             </div>
-          
+            <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-left">
+              <!-- <h3>What is Kritika Global?</h3> -->
+              <p>
+                Kritika International Trade is a contractor company having a history of catering to the unique requirements of the army and supplying and serving the men in uniform with high quality and critical top-notch medical equipment over the years. 
+              The company’s collaborations with the armed forced underscores the dedication for providing top quality and reliable materials and equipment. 
+              Kritika International Trade also provides top-class tactical equipment to meet the stringent requirements of the army. 
+              The company understands the critical nature of the army’s operations, and hence is dedicated to provide the best quality gear and services to the men in uniform ensuring their safety and effectiveness.
+               The company leverages its extensive network of trusted suppliers and manufacturers and sources the latest and the most advanced tactical gear.
+                The company is providing the army with state-of-the-art equipment tactical and protective gear like helmets, gloves, boots, masks and ballistic vests and also backpacks along with various other military equipment. 
+            
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-  
-   
-</div>
-<div class="services pb-3">
-    <div class="container">
-        <h2 class="text-center text-light pt-3 fw-bold">Services</h2>
+    <div class="services pb-3" id="services">
+      <div class="container">
+        <h2 class="text-center text-light pt-3 fw-bold" data-aos="fade-up">
+          Services
+        </h2>
 
- 
-    <div class="col-12 ">
-        <div class="service-row row  mb-3">
+        <div class="col-12">
+          <div class="service-row row mb-3" data-aos="fade-left">
             <div class="services-img col-lg-6 col-md-6 col-sm-12 pt-3 pb-3">
-             <img src="./images/img1.jpg"/>
+              <img src="./images/adobestock_129975524.jpg" />
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <h4 class="pt-3">Medical Equipment
-                </h4>
-                <p class="text-light">At Kritika Global Enterprises, We have genuine regard for the interests of our clients,employees and members of the communities in which we operate;this is embedded in our company values.Our approach to business involves providing best service to our clients.
-                    We take pride in shaping our clients expectations.</p>
-                
+              <h4 class="pt-3">Medical Equipment</h4>
+              <p class="text-light">
+
+                Krtikia International Private Trade Concern revolutionizes healthcare with cutting-edge medical equipment, elevating patient care and streamlining medical businesses. Our curated range goes beyond products; it's a commitment to precision, reliability, and innovation. Opt for us as an investment in top-tier patient monitoring systems, specialized medical devices, and diagnostic tools tailored for modern healthcare. Count on our dedication to delivering exceptional healthcare solutions as your trusted partner. Discover the future of medical equipment with Kritika International Private Trade Concern.              </p>
             </div>
-        </div>
-        <div class="service-row row  mb-3">
+          </div>
+          <div class="service-row row mb-3" data-aos="fade-right">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <h4 class="pt-3">Medical Equipment
-                </h4>
-                <p class="text-light">At Kritika Global Enterprises, We have genuine regard for the interests of our clients,employees and members of the communities in which we operate;this is embedded in our company values.Our approach to business involves providing best service to our clients.
-                    We take pride in shaping our clients expectations.</p>
-                
+              <h4 class="pt-3">Generator Equipment</h4>
+              <p class="text-light">
+             
+Step into a world where dependable power is not just a luxury but a necessity, courtesy of Generators supplied by Kritika International Trade Concern Private Limited. Picture a scenario where an unplanned power outage doesn't disrupt your important tasks. Our 20kVA Diesel generators ensure a continuous and cost-efficient power supply, keeping your life and business brightly illuminated even in the absence of electricity.
+              </p>
             </div>
-            <div class="services-img col-lg-6 col-md-6 col-sm-12 pt-3 pb-3 ">
-              <img src="./images/img1.jpg"/>   
+            <div class="services-img col-lg-6 col-md-6 col-sm-12 pt-3 pb-3">
+              <img src="./images/img1.jpg" />
             </div>
-        </div>
-        <div class="service-row row  mb-3">
-            <div class=" services-img col-lg-6 col-md-6 col-sm-12 pt-3 pb-3 ">
-             <img src="./images/img1.jpg"/>
+          </div>
+          <div class="service-row row mb-3" data-aos="fade-left">
+            <div class="services-img col-lg-6 col-md-6 col-sm-12 pt-3 pb-3">
+              <img src="./images/militaryequi.png" />
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <h4 class="pt-3">Medical Equipment
-                </h4>
-                <p class="text-light">At Kritika Global Enterprises, We have genuine regard for the interests of our clients,employees and members of the communities in which we operate;this is embedded in our company values.Our approach to business involves providing best service to our clients.
-                    We take pride in shaping our clients expectations.</p>
-                
-                
+              <h4 class="pt-3">Military Equipment</h4>
+              <p class="text-light">
+                At Kritika Global Enterprises, We have genuine regard for the
+                interests of our clients,employees and members of the
+                communities in which we operate;this is embedded in our company
+                values.Our approach to business involves providing best service
+                to our clients. We take pride in shaping our clients
+                expectations.
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</div>
-<div class="affiliated">
-    <div class="container">
-        <h2 class="text-center text-muted pt-3 fw-bold">We are affiliated with</h2>
-        <div class="affilated-img d-flex gap-5 justify-content-center align-items-center">
-            <a href="https://ott.co.za/"><img src="./images/logo.png" ></a>
-           <a href="https://sherpglobal.com/en/"><img src="./images/Rectangle 924.png"></a> 
-        </div>
-        </div>
+    <div class="past-project container mb-3">
+        <h2 class="text-center text-muted pt-4 fw-bold" data-aos="fade-up">
+         OUR PAST PROJECTS
+          </h2>
+      
+          
+          <P class="text-center">Kritika International Trade is a contractor company having a history of catering to the unique requirements of the army and supplying and serving the men in uniform with high quality and critical top-notch medical equipment over the years. The company feels honored to have played an important role to support the armed forces with the good quality equipment. The company’s collaborations with the armed forced underscores the dedication for providing top quality and reliable materials and equipment. The company has provided the army with top notch medical equipment like field medical packs, diagnostic equipment such as portable X-ray machines and ultrasound machines and also personal protective equipment like masks, gloves and other protective gear. These are a few among the many equipment supplied by the company to the army for their welfare.
+            Kritika International Trade also provides top-class tactical equipment to meet the stringent requirements of the army. The company understands the critical nature of the army’s operations, and hence is dedicated to provide the best quality gear and services to the men in uniform ensuring their safety and effectiveness. The company leverages its extensive network of trusted suppliers and manufacturers and sources the latest and the most advanced tactical gear. The company is providing the army with state-of-the-art equipment tactical and protective gear like helmets, gloves, boots, masks and ballistic vests and also backpacks along with various other military equipment. 
+            Having been founded with a commitment to excellence, the company has truly been a cornerstone in the industry.
+            </P>
+            <div class="gallery col-12">
+              <div class="row">
+                <img src="./images/Untitled design (3).png" class="col-lg-4 col-md-6 col-sm-6 pt-2" alt="a dream catcher" data-aos="zoom-in">
+                <img src="./images/Untitled design (4).png"class="col-lg-4 col-md-6 col-sm-6 pt-2" alt="a piano" data-aos="zoom-in">
+                <img src="./images/Untitled design (5).png" class="col-lg-4 col-md-6 col-sm-6 pt-2"alt="a live concert" data-aos="zoom-in">
+                <img src="./images/Untitled design (6).png" class="col-lg-4 col-md-6 col-sm-6 pt-2"alt="Paris" data-aos="zoom-in">
+                <img src="./images/Untitled design (7).png" class="col-lg-4 col-md-6 col-sm-6 pt-2"alt="a live concert" data-aos="zoom-in">
+                <img src="./images/Untitled design (8).png"class="col-lg-4 col-md-6 col-sm-6 pt-2" alt="Paris" data-aos="zoom-in">
+              </div>
+             
+            </div>
 
-
-</div>
-<div class="contact-us pb-3" id="contactUs">
-    <h2 class="text-center text-muted pt-3 fw-bold">Contact Us</h2>
-    <div class="container">
+    </div>
+    <div class="affiliated">  
+      <div class="container">
+        <h2 class="text-center text-muted pt-3 fw-bold" data-aos="fade-up">
+          We are affiliated with
+        </h2>
+        <div
+          class="affilated-img d-flex gap-5 justify-content-center align-items-center"
+        >
+          <a href="https://ott.co.za/" data-aos="zoom-in"
+            ><img src="./images/logo.png"
+          /></a>
+          <a href="https://sherpglobal.com/en/" data-aos="zoom-in"
+            ><img src="./images/Rectangle 924.png"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us pb-4" id="contactUs">
+      <h2 class="text-center text-muted pt-3 fw-bold pb-3" data-aos="fade-up">Contact Us</h2>
+      <div class="container">
         <div class="col-12">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                 <h4 class="fw-bold" > Contact Detail</h4>
-                 <div class="contacts d-flex gap-2">
-                    <img src="./icons/Vector (7).png">
-                    <p class="fw-bold"> kathmandu, Tinkune</p>
-                 </div>
-                 <div class="contacts d-flex gap-2 ">
-                    <img src="./icons/Vector (6).png">
-                    <p class="fw-bold"> +977 9840000000</p>
-                 </div>
-                 <div class="contacts d-flex gap-2 ">
-                    <img src="./icons/Vector (8).png">
-                    <p class="fw-bold">Kritikainternationalglobal.gmail.com</p>
-                 </div>
-                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.952833675938!2d85.34788997599144!3d27.687852626350082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198bff44beab%3A0xb2adad06c4dfc729!2sNASA%20Int&#39;l%20College!5e0!3m2!1sen!2snp!4v1701709762508!5m2!1sen!2snp" width="100%"  height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                 </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    
-                    <form class="col-12" onsubmit="sendEmail();reset(); return false;">
-                        <h4 class="col-12 text-muted">Get in touch</h4>
-                        <input  class="col-12 m-1" type="text" id="name" placeholder="Enter your Name" required>
-                        <input  class="col-12 m-1" type="email" id="email" placeholder="Email ID" required>
-                        <input class="col-12 m-1" type="text" id="phone" placeholder="Phone no" required>
-                       <textarea class="col-12 m-1" id="message" rows="4" placeholder="how can we hepl you"></textarea>
-                       <button class="col-12 m-1" type="submit">Send Message</button>
- 
-                    </form>
-                </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12"  data-aos="fade-right">
+              <h4 class="fw-bold">Contact Detail</h4>
+              <div class="contacts d-flex gap-2">
+                <img src="./icons/Vector (7).png" />
+                <p class="fw-bold">kathmandu, Tinkune</p>
+              </div>
+              <div class="contacts d-flex gap-2">
+                <img src="./icons/Vector (6).png" />
+                <p class="fw-bold">+977 9840000000</p>
+              </div>
+              <div class="contacts d-flex gap-2">
+                <img src="./icons/Vector (8).png" />
+                <p class="fw-bold">Kritikainternationalglobal.gmail.com</p>
+              </div>
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.817015445884!2d85.3051076!3d27.6920499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1910b2fa0407%3A0x2817c6ea0a4d11ab!2sKritika%20International%20Trade%20Concern%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1703057023086!5m2!1sen!2snp" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
+            <div class="col-lg-6 col-md-12"  data-aos="fade-left" >
+              <form
+                class="col-12"
+                onsubmit="sendEmail();reset(); return false;"
+              >
+                <h4 class="col-12 text-muted">Get in touch</h4>
+                <input
+                  class="col-12 m-1"
+                  type="text"
+                  id="name"
+                  placeholder="Enter your Name"
+                  required
+                />
+                <input
+                  class="col-12 m-1"
+                  type="email"
+                  id="email"
+                  placeholder="Email ID"
+                  required
+                />
+                <input
+                  class="col-12 m-1"
+                  type="text"
+                  id="phone"
+                  placeholder="Phone no"
+                  required
+                />
+                <textarea
+                  class="col-12 m-1"
+                  id="message"
+                  rows="4"
+                  placeholder="how can we hepl you"
+                ></textarea>
+                <button class="col-12 m-1" type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<footer class="d-lg-flex d-md-flex justify-content-evenly align-items-center px-3">
-    <p class="text-light  ">
-        © 2023  |  Privacy Policy  |  Made with passion by <span style="color: #FF9D0A;">GreenMantis</span> |  This website is using cookies
-    </p>
-    <div class="footer-icon d-flex gap-3">
-        <img src="./icons/facebook.png">
-        <img src="./icons/insta.png">
-        <img src="./icons/LinkedIn.png">
-        
-    </div>
-</footer>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
-<script>
-    $(".option").click(function(){
-    $(".option").removeClass("active");
-    $(this).addClass("active");
-    
- });
+    <footer
+      class="d-lg-flex d-md-flex justify-content-evenly align-items-center px-3"
+    >
+      <p class="text-light">
+        © 2023 | Privacy Policy | Made with passion by
+        <span style="color: #ff9d0a">GreenMantis</span> | This website is using
+        cookies
+      </p>
+      <div class="footer-icon d-flex gap-3">
+        <img src="./icons/facebook.png" />
+        <img src="./icons/insta.png" />
+        <img src="./icons/LinkedIn.png" />
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(".option").click(function () {
+        $(".option").removeClass("active");
+        $(this).addClass("active");
+      });
 
- //menu
- document.addEventListener('DOMContentLoaded', function () {
+      //menu
+      document.addEventListener("DOMContentLoaded", function () {
         // Select the menu button
-        var menuButton = document.getElementById('menuButton');
+        var menuButton = document.getElementById("menuButton");
 
         // Select the navigation container
-        var navContainer = document.querySelector('.nav-a');
+        var navContainer = document.querySelector(".nav-a");
 
         // Add a click event listener to the menu button
-        menuButton.addEventListener('click', function (event) {
-            // Prevent the default behavior of the anchor link
-            event.preventDefault();
-            
-            // Toggle the visibility of the navigation container
-            navContainer.style.display = (navContainer.style.display === 'none' || navContainer.style.display === '') ? 'flex' : 'none';
-        });
-    });
-</script>
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-<script>
-    function sendEmail(){
-        Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "sijankasalawat333@gmail.com",
-    Password : "Dragon333",
-    To : 'sijankasalawat333@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "new contact from people",
-    Body : "And this is the body"
-     }).then(
-        message => alert(message)
-      );
-    }
-</script>
+        menuButton.addEventListener("click", function (event) {
+          // Prevent the default behavior of the anchor link
+          event.preventDefault();
 
-</body>
+          // Toggle the visibility of the navigation container
+          navContainer.style.display =
+            navContainer.style.display === "none" ||
+            navContainer.style.display === ""
+              ? "flex"
+              : "none";
+        });
+      });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "sijankasalawat333@gmail.com",
+          Password: "Dragon333",
+          To: "sijankasalawat333@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "new contact from people",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script>
+  </body>
 </html>
