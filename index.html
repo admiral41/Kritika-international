@@ -22,6 +22,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/kritikaLogo" href="./images/kritikaLogo.png">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -35,7 +36,9 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Kritika Global</title>
+
     <style>
       .gallery {
         display: grid;
@@ -57,7 +60,7 @@
         bottom: 0;
         left: -1;
         width: 92%;
-     
+
         text-align: center;
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.7);
@@ -72,6 +75,79 @@
 
       .gallery .image-container:hover .image-text {
         opacity: 1;
+      }
+      .nav-link {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: bold;
+      }
+      .actives a {
+        text-decoration: none;
+        color: #ff9d0a;
+      }
+      .nav-a:hover {
+        color: #ff9d0a;
+      }
+      .nav-a {
+        display: flex;
+      }
+      .nav-a a {
+        color: white;
+      }
+      .main-body1 {
+        margin-top: 85vh;
+      }
+      @media only screen and (max-width: 900px) {
+        header {
+          padding: 0px;
+        }
+        .nav-top {
+          border-radius: 0px;
+        }
+        .services-img img {
+          height: 200px;
+        }
+        .profile {
+          height: 70px;
+          width: 70px;
+        }
+        .nav-a {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          background: #2e2e2e;
+          width: 100%;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          transition: transform 0.3s ease-in-out;
+          transform: translateX(-100%);
+        }
+        .nav-a.show {
+          transform: translateX(0);
+        }
+        .nav-a .nav-link {
+          margin: 15px 0;
+          font-size: 1.2rem;
+        }
+        .menu {
+          display: block;
+          position: absolute;
+          top: 10px;
+          right: 3%;
+          cursor: pointer;
+        }
+        .nav-a {
+          display: flex;
+          margin-top: 92vh;
+          margin-left: -3%;
+        }
+        .nav-a a {
+          color: white;
+        }
+        .main-body1 {
+          margin-top: 90vh;
+        }
       }
     </style>
   </head>
@@ -183,9 +259,7 @@
       >
         <div>
           <h2>
-            <a class="navbar-brand fw-bold text-light" href="#"
-              >Kritika Global</a
-            >
+            <img src="./images//kritikaLogo.png" alt="Logo" class="logo " style="height: 25px;">
           </h2>
         </div>
 
@@ -200,12 +274,13 @@
             src="./icons/mingcute_menu-fill.png"
             id="menuButton"
             alt="menu"
+            style="height: 25px; width: 25px"
           />
         </div>
       </div>
     </header>
 
-    <div class="main-body1" style="margin-top: 85vh; padding-top: 10px">
+    <div class="main-body1" style="padding-top: 10px">
       <h2
         class="text-center w-100 pt-4 mt-2 mb-4 pb-3 text-muted fw-bold"
         data-aos="fade-up"
@@ -225,12 +300,9 @@
                 <h4 class="profile-name fw-bold">CHAIRMAN</h4>
                 <h5 class="fw-bold" style="color: #f8d38a">Prakash Thapa</h5>
                 <p class="px-3">
-                  I write this message with immense pleasure to be serving as
-                  the chairman of Kritika International Trade. All the members
-                  onboard have been keen helping hands to make our company
-                  attain its heights. We have been providing satisfactory
-                  services to various clients in the past and we intend to keep
-                  on doing so with the same integrity.
+                  Excited to lead Kritika International Trade! Our team shines,
+                  and we've been delivering top-notch services. Committed to
+                  keeping it up and serving our clients with dedication.
                 </p>
               </div>
             </div>
@@ -246,12 +318,10 @@
                 </h4>
                 <h5 class="fw-bold" style="color: #f8d38a">Sufal Thakuri</h5>
                 <p class="px-3">
-                  With great enthusiasm is what I pen down this message being
-                  the director of Kritika International Trade. Having
-                  like-minded and talented minds working side by side is what
-                  has propelled our company to such heights. As we move forward
-                  into the future, I am more than assured that our company will
-                  make a huge difference across the globe.
+                  As the Director of Kritika International Trade, I'm excited
+                  about our talented team driving our success. Looking ahead,
+                  I'm confident our company will make a big impact globally.
+                  Exciting times ahead!
                 </p>
               </div>
             </div>
@@ -283,7 +353,9 @@
                 <div class="label">
                   <div class="info">
                     <div class="main">Medical Equipment</div>
-                    <div class="sub">We provide medical equipment and services.</div>
+                    <div class="sub">
+                      We provide medical equipment and services.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -297,7 +369,8 @@
                 <div class="label">
                   <div class="info">
                     <div class="main">Military Equipment</div>
-                    <div class="sub">We provide Military Equipment for Nepal Army.
+                    <div class="sub">
+                      We provide Military Equipment for Nepal Army.
                     </div>
                   </div>
                 </div>
@@ -320,23 +393,20 @@
             <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-left">
               <!-- <h3>What is Kritika Global?</h3> -->
               <p>
-                Kritika International Trade is a contractor company having a
-                history of catering to the unique requirements of the army and
-                supplying and serving the men in uniform with high quality and
-                critical top-notch medical equipment over the years. The
-                company’s collaborations with the armed forced underscores the
-                dedication for providing top quality and reliable materials and
-                equipment. Kritika International Trade also provides top-class
-                tactical equipment to meet the stringent requirements of the
-                army. The company understands the critical nature of the army’s
-                operations, and hence is dedicated to provide the best quality
-                gear and services to the men in uniform ensuring their safety
-                and effectiveness. The company leverages its extensive network
-                of trusted suppliers and manufacturers and sources the latest
-                and the most advanced tactical gear. The company is providing
-                the army with state-of-the-art equipment tactical and protective
-                gear like helmets, gloves, boots, masks and ballistic vests and
-                also backpacks along with various other military equipment.
+                Kritika International Trade, a respected contractor company, has
+                a strong history of meeting the unique needs of the military by
+                providing high-quality medical equipment and top-class tactical
+                gear. The company's collaborations underscore its dedication to
+                supplying reliable materials. Understanding the critical nature
+                of military operations, Kritika International Trade ensures the
+                safety and effectiveness of the armed forces by leveraging its
+                extensive network to source the latest and most advanced
+                equipment. The company delivers state-of-the-art tactical and
+                protective gear, including helmets, gloves, boots, masks,
+                ballistic vests, backpacks, and other military essentials.
+                Committed to excellence, Kritika International Trade stands as a
+                cornerstone in supporting the armed forces with cutting-edge
+                equipment and unwavering dedication.
               </p>
             </div>
           </div>
@@ -385,7 +455,7 @@
               </p>
             </div>
             <div class="services-img col-lg-6 col-md-6 col-sm-12 pt-3 pb-3">
-              <img src="./images/img1.jpg" />
+              <img src="./images/My project (3).jpg" />
             </div>
           </div>
           <div class="service-row row mb-3" data-aos="fade-left">
@@ -413,30 +483,23 @@
       </h2>
 
       <p>
-        Kritika International Trade is a contractor company having a history of
-        catering to the unique requirements of the army and supplying and
-        serving the men in uniform with high quality and critical top-notch
-        medical equipment over the years. The company feels honored to have
-        played an important role to support the armed forces with the good
-        quality equipment. The company’s collaborations with the armed forced
-        underscores the dedication for providing top quality and reliable
-        materials and equipment. The company has provided the army with top
-        notch medical equipment like field medical packs, diagnostic equipment
-        such as portable X-ray machines and ultrasound machines and also
-        personal protective equipment like masks, gloves and other protective
-        gear. These are a few among the many equipment supplied by the company
-        to the army for their welfare. Kritika International Trade also provides
-        top-class tactical equipment to meet the stringent requirements of the
-        army. The company understands the critical nature of the army’s
-        operations, and hence is dedicated to provide the best quality gear and
-        services to the men in uniform ensuring their safety and effectiveness.
-        The company leverages its extensive network of trusted suppliers and
-        manufacturers and sources the latest and the most advanced tactical
-        gear. The company is providing the army with state-of-the-art equipment
-        tactical and protective gear like helmets, gloves, boots, masks and
-        ballistic vests and also backpacks along with various other military
-        equipment. Having been founded with a commitment to excellence, the
-        company has truly been a cornerstone in the industry.
+        Kritika International Trade, a distinguished contractor company, has a
+        rich history of meeting the distinctive needs of the military.
+        Specializing in supplying high-quality medical equipment, the company
+        takes pride in its longstanding commitment to serving the men and women
+        in uniform. Collaborating closely with the armed forces, Kritika
+        International Trade exemplifies dedication to delivering reliable
+        materials. The company's contributions include field medical packs,
+        diagnostic tools such as portable X-ray and ultrasound machines, as well
+        as personal protective equipment like masks and gloves. Additionally,
+        Kritika International Trade excels in providing top-tier tactical gear
+        to meet the rigorous demands of the military. Recognizing the critical
+        nature of military operations, the company ensures the safety and
+        effectiveness of the armed forces by sourcing state-of-the-art
+        equipment, including helmets, gloves, boots, masks, ballistic vests,
+        backpacks, and various other military essentials. Founded on a
+        commitment to excellence, Kritika International Trade stands as a
+        cornerstone in the industry.
       </p>
       <div class="gallery col-12">
         <div class="row">
@@ -606,25 +669,20 @@
         $(this).addClass("active");
       });
 
-      //menu
       document.addEventListener("DOMContentLoaded", function () {
         // Select the menu button
         var menuButton = document.getElementById("menuButton");
-
+        var Home = document.getElementById("home");
         // Select the navigation container
         var navContainer = document.querySelector(".nav-a");
-
-        // Add a click event listener to the menu button
-        menuButton.addEventListener("click", function (event) {
-          // Prevent the default behavior of the anchor link
-          event.preventDefault();
-
+        Home.addEventListener("click", function () {
           // Toggle the visibility of the navigation container
-          navContainer.style.display =
-            navContainer.style.display === "none" ||
-            navContainer.style.display === ""
-              ? "flex"
-              : "none";
+          navContainer.classList.toggle("show");
+        });
+        // Add a click event listener to the menu button
+        menuButton.addEventListener("click", function () {
+          // Toggle the visibility of the navigation container
+          navContainer.classList.toggle("show");
         });
       });
     </script>

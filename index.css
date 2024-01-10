@@ -37,7 +37,7 @@ header{
   padding: 10px;
 }
 .nav-top{
-  background: rgba(0, 0, 0, 0.67);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 50px;
   
 }
@@ -319,6 +319,12 @@ footer {
   height: 20px;
 }
 @media only screen and (max-width: 900px) {
+  .owl-carousel.home-slider .slider-item .slider-text h1{
+    font-size: 32px;
+  }
+  .owl-carousel.home-slider .slider-item .slider-text h2{
+    font-size: 12px;
+  }
   header{
     padding: 0px;
   }
