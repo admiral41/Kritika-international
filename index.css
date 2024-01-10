@@ -1,0 +1,399 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+
+}
+
+h1 {
+  font-size: 32px;
+  font-family: "Nunito Sans", sans-serif;
+
+}
+h2 {
+  font-size: 24px;
+  font-family: "Nunito Sans", sans-serif;
+
+}
+h3 {
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+
+}
+h4 {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+
+}
+p {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+header{
+  padding: 10px;
+}
+.nav-top{
+  background: rgba(0, 0, 0, 0.67);
+  border-radius: 50px;
+  
+}
+.nav-link {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+.actives a {
+  text-decoration: none;
+  color: #ff9d0a;
+}
+.nav-a:hover {
+  color: #ff9d0a;
+}
+.nav-a {
+  display: flex;
+}
+.nav-a a {
+  color: white;
+}
+.navbar-brand {
+  color: white;
+}
+
+.profile {
+  height: 100px;
+  width: 100px;
+  margin-top: -55px;
+  
+}
+.messages{
+  border-radius: 20px;
+  background-color: white;
+  border:5px solid rgb(165, 165, 165);
+}
+.main-body1 {
+  background-color: #f6f6f6;
+}
+.profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-name{
+    padding-top: 50px;
+    color: #444444;
+
+}
+/* services css */
+.credit {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: inherit;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+
+  height: 400px;
+}
+
+.options .option {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  border: 0px solid var(--defaultColor);
+  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+
+  /* Loop through optionDefaultColours */
+  --defaultBackground: #e6e9ed;
+
+  /* Active state styles */
+  &.active {
+    flex-grow: 10000;
+    transform: scale(1);
+    max-width: 600px;
+    margin: 0px;
+    border-radius: 40px;
+    background-size: auto 100%;
+
+    .shadow {
+      box-shadow: inset 0 -120px 120px -120px black,
+        inset 0 -120px 120px -100px black;
+    }
+
+    .label {
+      bottom: 20px;
+      left: 20px;
+
+      .info > div {
+        left: 0px;
+        opacity: 1;
+      }
+    }
+  }
+
+  /* Inactive state styles */
+  &:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+
+    .shadow {
+      bottom: -40px;
+      box-shadow: inset 0 -120px 0px -120px black,
+        inset 0 -120px 0px -100px black;
+    }
+
+    .label {
+      bottom: 10px;
+      left: 10px;
+
+      .info > div {
+        left: 20px;
+        opacity: 0;
+      }
+    }
+  }
+  /* past project */
+  .gallery row img{
+    filter: grayscale(100%);
+  }
+  .gallery row img:hover{
+    filter: grayscale(0%);
+
+  }
+  
+  /* Common styles for both states */
+  .shadow {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 120px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  }
+
+  .label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+
+    .icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      min-width: 40px;
+      max-width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background-color: white;
+      color: var(--defaultBackground);
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 10px;
+      color: white;
+      white-space: pre;
+
+      > div {
+        position: relative;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95),
+          opacity 0.5s ease-out;
+      }
+
+      .main {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .sub {
+        transition-delay: 0.1s;
+      }
+    }
+  }
+}
+.contact-btn{
+    border:none;
+    background-color: #ff9d0a;
+    color: white;
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+    padding: 5px 15px;
+    border-radius: 25px;
+    margin-top: 10px;
+
+}
+.contact-btn:hover{
+    background-color: #d1881b;
+}
+/* services css */
+.services {
+  background-color: #444444;
+}
+.services-img img {
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+.service-row {
+  background-color: #4d4d4d;
+}
+.service-row h4 {
+  color: #ff9d0a;
+}
+/* affiliated */
+.affiliated {
+  background-color: #f6f6f6;
+}
+.affilated-img img {
+  width: 150px;
+  height: fit-content;
+  filter: grayscale(100%);
+}
+.affilated-img img:hover {
+  filter: grayscale(0%);
+  scale: 1.1;
+  transition: 0.7s;
+}
+/* footer icon */
+.footer-icon img {
+  height: 20px;
+  width: 20px;
+  filter: grayscale(100%);
+}
+.footer-icon img:hover {
+    filter: grayscale(0%);
+}
+footer {
+  background-color: #444444;
+}
+.menu {
+  height: 40px;
+  width: 40px;
+  display: none;
+}
+.menu img {
+  height: 100%;
+  width: 100%;
+}
+/* contact us */
+.contact-us form {
+  background-color: rgba(58, 58, 58, 0.206);
+  border-radius: 25px;
+  padding: 10px;
+}
+.contact-us input {
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+}
+.contact-us textarea {
+  border-radius: 10px;
+  border: none;
+}
+.contact-us button {
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #ff9d0a;
+  color: white;
+}
+.contacts img {
+  height: 20px;
+}
+@media only screen and (max-width: 900px) {
+  header{
+    padding: 0px;
+  }
+  .nav-top{
+   
+    border-radius: 0px;
+    
+  }
+    .services-img img {
+        height: 200px;
+    }
+    .profile{
+        height:70px;
+        width: 70px;
+        
+
+    }
+  .nav-a {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: #2e2e2e;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav-a.show {
+    transform: translateX(0);
+  }
+  .nav-a .nav-link {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 3%;
+  }
+  .nav-a {
+    display: flex;
+  }
+
+  .nav-a a {
+    color: white;
+  }
+}
+@media only screen and (max-width: 901px) {
+  .nav-a {
+    display: flex !important; /* Ensure the navigation menu is visible */
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.nav-a {
+  display: flex;
+}
+
+.nav-a a {
+  color: white;
+}
